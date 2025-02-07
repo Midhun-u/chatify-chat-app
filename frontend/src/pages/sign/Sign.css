@@ -1,0 +1,205 @@
+body{
+    background-image: url('../../assets/background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+}
+
+.sign-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-top: 55px;
+}
+
+.sign-form{
+    width: 500px;
+    height: 90vh;
+    box-shadow: 0px 0px 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    margin-top: 10px;
+}
+
+.sign-title{
+    margin-top: 4px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.sign-title img{
+    width: 70px;
+}
+
+.sign-title h1{
+    font-size: 1.5rem;
+    color: #00308F;
+}
+
+.sign-section{
+    flex-grow: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 30px;
+    padding-top: 100px;
+}
+ 
+.sign-section h2{
+    position: absolute;
+    top: 190px;
+    color: #4B0082;
+}
+
+.sign-section input{
+    width: 250px;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1.5px solid purple;
+    font-size: 1rem;
+}
+
+.sign-section input:focus{
+    outline: none;
+
+}
+
+.signup-button{
+    width: 275px;
+    height: 40px;
+    background-color: blueviolet;
+    border: none;
+    color: whitesmoke;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-button:active{
+    background-color: darkorchid;
+}
+
+.sign-section p{
+    font-size: 1rem;
+}
+
+.sign-section a{
+    color: black;
+}
+
+.sign-section a:hover{
+    color: purple;
+}
+
+.sign-section a:active{
+    color: purple;
+}
+
+.sign-section img{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-left: 240px;
+    margin-top: 157px;
+    cursor: pointer;
+}
+
+.profile-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.profile-section{
+    width: 400px;
+    height: 80vh;
+    box-shadow: 0px 0px 5px;
+    background-color: white;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.profile-section img{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.profile-section input{
+    margin-top: 20px;
+    width: 250px;
+    height: 30px;
+    border: 1.5px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.profile-section .update{
+    width: 270px;
+    height: 40px;
+    border: none;
+    color: whitesmoke;
+    background-color: 	#4c0099;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-section input:focus{
+    outline: none;
+}
+
+@media(max-width : 1890px)
+{
+    body{
+        height: 100vh;
+        overflow: hidden;
+    }
+
+}
+
+@media(max-width : 430px)
+{
+    body{
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .sign-form{
+        margin-top: 13px;
+    }
+
+    .profile-section{
+        width: 350px;
+    }
+
+}
