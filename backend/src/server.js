@@ -7,9 +7,11 @@ import messageRoutes from './routes/message.route.js'
 import databaseConnection from './lib/db.js'
 import http from 'http'
 import {Server} from 'socket.io'
+import path from 'path'
 config()
 const app = express()
 const PORT = process.env.PORT
+const __dirname = path.resolve()
 const server = http.createServer(app)
 
 //middlewares
@@ -23,6 +25,15 @@ app.use("/auth" , authRoutes)
 
 //route middleware for messages
 app.use("/message" , messageRoutes)
+
+if(process.env.NODE_ENV === "production")
+{
+    app.use(express.static(path.join(__dirname , "../frontend/dist")))
+
+    app.get("*" , (request , response) => {
+        response.sendFile(path.join(__dirname , "../frontend" , "dist" , "index.html"))
+    })
+}
 
 const io = new Server(server , {
         
