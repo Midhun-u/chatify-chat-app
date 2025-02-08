@@ -121,6 +121,8 @@
     align-items: center;
     box-shadow: 0px 0px 5px;
     flex-grow: 0;
+    z-index: 9;
+    background-color: "whitsmoke";
 }
 
 .header .profile-pic{
